@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Azturan sacad</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#projects {
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact {
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <!-- Qaybta Hordhaca -->
+    <header>
+        <img src="image.jpg" alt="Sawirka Aniga" class="profile-pic">
+        <h1>Azturan sacad abdirahmaan</h1>
+        <h3>horumariye web iyo Barnaamijyo</h3>
+        <p>Ku soo dhawoow boggeyga shaqsiga ah, halka aad ka arki doonto shaqooyinkeyga, xirfadahayga, iyo sida aad iigu soo
+        xiriiri karto.</p>
+    </header>
+
+     <!-- Qaybta Mashruucyada -->
+    <section id="projects">
+        <h2>Mashruucyadayda</h2>
+        <div class="project">
+            <img src="jjjj.jpg" alt="Mashruuc 1">
+            <h3>Website Ganacsi</h3>
+            <p>Website aan u sameeyay shirkad ganacsi oo ku taal Hargeysa.</p>
+        </div>
+        <div class="project">
+            <img src="klooo.jpg" alt="Mashruuc 2">
+            <h3>ku saabsan Aniga</h3>
+            <p>Waxaan ahay horumariye web oo xiiseeya naqshadeynta iyo dhisidda bogag casri ah. Ujeeddadaydu waa inaan
+            abuuro website-yo fudud, degdeg ah, isla markaana si fiican u shaqeeya.</p>
+        </div>
+
+        <div class="section">
+  <h2>Xirfadaha aan takhasuska aan u leeyahay</h2>
+  <ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Flutter & Dart</li>
+    <li>Supabase & Database Management</li>
+    <li>Responsive Design</li>
+  </ul>
+</div>
+ </section>
+
+     <!-- Qaybta Xiriirka -->
+    <section id="contact">
+        <h2>La Xiriir</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="azturan sacad abdirahmaan" required>
+            <input type="email" id="email" placeholder="azturan@gmail.com" required>
+            <textarea id="message" placeholder="waxaan ahay developer dhamaystiran oo kuu samayn kara hadad doonayso bogag qurux 
+    badan oo aan kuugu dhamaystiraya xogtaada oo dhan si farshaxan leh." required></textarea>
+            <button type="submit">Dir</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert("Fariintaada waa la diray! Mahadsanid.");
+});
+
+    </script>
+    
+</body>
+</html>
